@@ -1,0 +1,299 @@
+.trading-stats {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.stat-card {
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+  border: 1px solid rgba(0, 212, 255, 0.2);
+}
+
+.stat-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 212, 255, 0.2);
+}
+
+.stat-icon {
+  font-size: 3rem;
+  color: #00d4ff;
+  margin-bottom: 1rem;
+}
+
+.stat-value {
+  font-family: 'Orbitron', monospace;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #00d4ff;
+  margin-bottom: 0.5rem;
+}
+
+.stat-description {
+  font-size: 0.9rem;
+  color: #cccccc;
+  line-height: 1.4;
+}
+
+.performance-section {
+  margin-bottom: 4rem;
+}
+
+.performance-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.performance-header h3 {
+  font-family: 'Orbitron', monospace;
+  font-size: 2rem;
+  color: #00d4ff;
+  margin-bottom: 0.5rem;
+}
+
+.performance-header p {
+  color: #cccccc;
+  font-size: 1.1rem;
+}
+
+.pairs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.pair-card {
+  padding: 1.5rem;
+  border: 1px solid rgba(0, 212, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.pair-card:hover {
+  border-color: rgba(0, 212, 255, 0.3);
+  transform: translateY(-3px);
+}
+
+.pair-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.pair-name {
+  font-family: 'Orbitron', monospace;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+.pair-status {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.pair-status.bullish {
+  background: #00ff88;
+  box-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+}
+
+.pair-status.neutral {
+  background: #ffaa00;
+  box-shadow: 0 0 10px rgba(255, 170, 0, 0.5);
+}
+
+.pair-performance {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.performance-value {
+  font-family: 'Orbitron', monospace;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #00ff88;
+}
+
+.performance-period {
+  font-size: 0.8rem;
+  color: #cccccc;
+  opacity: 0.7;
+}
+
+.trading-philosophy {
+  padding: 3rem;
+  border: 1px solid rgba(0, 212, 255, 0.2);
+}
+
+.trading-philosophy h3 {
+  font-family: 'Orbitron', monospace;
+  font-size: 2rem;
+  color: #00d4ff;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.philosophy-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.philosophy-item h4 {
+  font-family: 'Orbitron', monospace;
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.philosophy-item p {
+  color: #cccccc;
+  line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+  .trading-stats {
+    padding: 4rem 0;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .pairs-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+
+  .philosophy-content {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .trading-stats {
+    padding: 3rem 0;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .stat-card {
+    padding: 1.5rem;
+  }
+
+  .stat-icon {
+    font-size: 2.5rem;
+  }
+
+  .stat-value {
+    font-size: 2.2rem;
+  }
+
+  .performance-header h3 {
+    font-size: 1.6rem;
+  }
+
+  .performance-header p {
+    font-size: 1rem;
+  }
+
+  .pairs-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .pair-card {
+    padding: 1.2rem;
+  }
+
+  .philosophy-content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .trading-philosophy {
+    padding: 2rem;
+  }
+
+  .trading-philosophy h3 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .trading-stats {
+    padding: 2rem 0;
+  }
+
+  .stat-card {
+    padding: 1.2rem;
+  }
+
+  .stat-icon {
+    font-size: 2.2rem;
+  }
+
+  .stat-value {
+    font-size: 2rem;
+  }
+
+  .stat-label {
+    font-size: 1rem;
+  }
+
+  .stat-description {
+    font-size: 0.85rem;
+  }
+
+  .performance-header h3 {
+    font-size: 1.4rem;
+  }
+
+  .pair-card {
+    padding: 1rem;
+  }
+
+  .pair-name {
+    font-size: 1rem;
+  }
+
+  .performance-value {
+    font-size: 1.2rem;
+  }
+
+  .trading-philosophy {
+    padding: 1.5rem;
+  }
+
+  .trading-philosophy h3 {
+    font-size: 1.4rem;
+  }
+
+  .philosophy-item h4 {
+    font-size: 1.1rem;
+  }
+
+  .philosophy-item p {
+    font-size: 0.9rem;
+  }
+}
